@@ -1,0 +1,32 @@
+{
+  "title": "CODEKITCHEN",
+  "name": "CODEKITCHEN",
+  "version": "1.0.0",
+  "description": "Introducing",
+  "license": "MIT",
+  "author": "Igor Emelyanchik",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "nodemailer": "^4.4.2"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-filter": "^5.0.1",
+    "gulp-header": "1.8.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0"
+  }
+}
