@@ -168,74 +168,97 @@ header.masthead h2 {
 .col-md-4.col-lg-2.col-6:nth-child(1) .portfolio-item{
   background: url(../img/photoshop.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(2) .portfolio-item{
   background: url(../img/illustrator.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(3) .portfolio-item{
   background: url(../img/HTML.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(4) .portfolio-item{
   background: url(../img/handlebars.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(5) .portfolio-item{
   background: url(../img/bootstrap.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
+
 .col-md-4.col-lg-2.col-6:nth-child(6) .portfolio-item{
   background: url(../img/CSS.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(7) .portfolio-item{
   background: url(../img/stylus.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(8) .portfolio-item{
   background: url(../img/js.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(9) .portfolio-item{
   background: url(../img/jQuery.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(10) .portfolio-item{
   background: url(../img/react.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(11) .portfolio-item{
   background: url(../img/nodejs.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(12) .portfolio-item{
   background: url(../img/mongodb.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(13) .portfolio-item{
   background: url(../img/webpack.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(14) .portfolio-item{
   background: url(../img/babel.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(15) .portfolio-item{
   background: url(../img/webstorm.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(16) .portfolio-item{
   background: url(../img/sublime.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(17) .portfolio-item{
   background: url(../img/aws.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
 }
 .col-md-4.col-lg-2.col-6:nth-child(18) .portfolio-item{
   background: url(../img/gcp.svg) no-repeat center center;
   background-size: 80%;
+  transition: all .3s ease;
+}
+
+.col-md-4.col-lg-2.col-6:hover .portfolio-item{
+  background-size: 90%;
 }
 
 
@@ -403,12 +426,12 @@ a:focus, a:hover, a:active {
   position: absolute;
   top: 120px;
   left: 93px;
-  margin-left: 10000px;
+  margin-left: 1000px;
   width: 60px;
   height: 24px;
   background: url(../img/mustache.png) no-repeat;
   background-size: contain;
-  transition: 4s all ease;
+  transition: 3s all ease;
 }
 
 .toque.active, .mustache.active{
@@ -575,7 +598,10 @@ circle.cls-1{
   0%{
     fill: #5b5b5b;
   }
-  50%{
+  35%{
+    fill: #d2131e;
+  }
+  75%{
     fill: #d2131e;
   }
   100%{
@@ -583,6 +609,10 @@ circle.cls-1{
   }
 }
 
+.rs-link{
+  font-family: 'Montserrat';
+  color: #9ac3c8;
+}
 
 
 

@@ -37,7 +37,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand js-scroll-trigger" href="http://www.codekitchen.pro/">
       <img src="img/ck_logo.svg" alt="logo" width="180px" height="50px">
     </a>
     <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -256,7 +256,7 @@
         <p class="lead">Hi! My name is Igor Emelyanchik and I'm not really a cook. I'm a web developer.
           CODEKITCEN - is just a web site that was made for introduction myself and technologies of my workflow.
           As you noticed, I prefer JavaScript stack and there are some reasons for this.
-          I think it is the most universal solution for web development and not only. JS is the only programming language you can use in browser.
+          I think it is the most universal solution for web development and not only. JS is the only programming language you can use in client-side.
           As well you can use JS on server-side with the help of Node.js platform. JavaScript uses an event-driven model that makes it lightweight and efficient.
           For more information in .pdf about me, my skills and work experience - click "Download" button below. Thank you for your attention.
         </p>
@@ -265,7 +265,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <a class="btn btn-xl btn-outline-light" href="favicon.ico" download="">
+      <a class="btn btn-xl btn-outline-light" href="Emelyanchik_Igor(Web:JavaScript developer).pdf" download="">
         <i class="fa fa-download mr-2"></i>
         Download resume
       </a>
@@ -333,7 +333,7 @@
       <!--</div>-->
       <div class="col align-self-center">
         <h4 class="text-uppercase mb-4">My Location</h4>
-        <h5 class="mb-4">As I can be anywhere, I provide you the fastest and most convenient ways to communicate with me or you can scroll up for a hundred pixels and use the contact form</h5>
+        <h5 class="mb-4">As I can be anywhere, I provide you with the fastest and most convenient ways to communicate with me or you can scroll up for a hundred pixels and use the contact form</h5>
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
             <a class="scl text-center" href="tel:+375444882021">
@@ -380,6 +380,7 @@
   <div class="container">
     <small>&copy; CODEKITCHEN 2018</small>
   </div>
+  <a href="#" class="rs-link" data-link-desktop="Desktop version" data-link-responsive="Mobile version"></a>
 </div>
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -865,12 +866,16 @@
     $(document).ready(()=>{
         setTimeout(()=>{
             $('.toque, .mustache, .chief').addClass('active');
-        }, 500);
+        }, 1000);
 
         $('.recipes_book, .react_pan_bg').click(()=>{
             $('.react_pan_bg').toggleClass('active');
         });
     });
+
+
+    // responsiveSwitch
+    ;var responsiveSwitch=(function(){var h=parseInt(window.responsiveSwitchBreakpoint)||1024;var a="ResponsiveSwitch";var d="content";var l="data-rs";var g="data-link-desktop";var e="data-link-responsive";var o="data-always-visible";var t="rs-link";var p="rs-link-to-desktop";var f="rs-link-to-responsive";var b="rs-link-inactive";var u="rs-link-active";function s(){var v=document.querySelector('meta[name="viewport"]');if(v.getAttribute(l)==undefined){v.setAttribute(l,v.getAttribute(d))}if(v.getAttribute(d)==v.getAttribute(l)){document.cookie=a+"=true;path=/";if(document.documentElement.clientWidth!=window.innerWidth){document.location.href=i()}else{v.setAttribute(d,"width="+h+"px, initial-scale="+(document.documentElement.clientWidth/h))}}else{document.cookie=a+"=false;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT";if(document.documentElement.clientWidth!=window.innerWidth){document.location.href=i()}else{v.setAttribute(d,v.getAttribute(l))}}return false}var c=false;function m(){var w=document.querySelectorAll("."+t);for(var x=0;x<w.length;x++){var v=w[x];if(v!=undefined){n(v,f);n(v,p);n(v,b);n(v,u);if(k()){j(v,f);j(v,u);v.innerHTML=v.getAttribute(e)}else{if(document.documentElement&&(document.documentElement.clientWidth<h||v.getAttribute(o)=="true")){j(v,p);j(v,u);v.innerHTML=v.getAttribute(g)}else{j(v,b);v.innerHTML=""}}if(!c){v.addEventListener("click",function(y){y=y||window.event;y.preventDefault();q()},false)}}}c=true}function q(){s();m()}function r(){if(k()){s()}if(document.addEventListener){document.addEventListener("DOMContentLoaded",m,false);document.addEventListener("orientationchange",m,false);window.addEventListener("resize",m,false)}}function k(){return document.cookie.search(a+"=true")>-1}function j(w,v){w.className+=" "+v}function n(w,v){w.className=" "+w.className+" ";w.className=w.className.replace(" "+v+" ","")}function i(){var v=new Date();var w=v.getTime();return document.location.protocol+"//"+document.location.host+document.location.pathname+(window.location.search?window.location.search+"&":"?")+"rsTimestamp="+w+document.location.hash}r();return{toggle:q}})();
 </script>
 
 
