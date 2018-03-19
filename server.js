@@ -9,10 +9,10 @@ const app = express();
 
 app.use(bodyparser.urlencoded({ extended: false }));
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-    response.sendFile(__dirname + '/index.html');
+    response.render('/index.html');
 });
 
 app.post('/mail', function(req, res) {
