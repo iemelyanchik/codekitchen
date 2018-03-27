@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Marker Felt";
+  src: url("../MarkerFelt.ttf") format("ttf");
+}
+
 body {
   font-family: 'Lato'; }
 

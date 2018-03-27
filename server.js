@@ -11,8 +11,21 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 app.use(express.static(__dirname + '/public'));
 
+const MongoClient = require('mongodb').MongoClient;
+
+// const uri = "mongodb+srv://iemelyanchik:qw407372@cluster0-2zq8x.mongodb.net/test";
+// MongoClient.connect(uri, function(err, client) {
+//     const collection = client.db("test").collection("devices");
+//     collection.find({}).toArray(function(err, docs) {
+//         console.log("Found the following records");
+//         console.log(docs)
+//     });
+//     // perform actions on the collection object
+//     client.close();
+// });
+
 app.get('/', function(request, response) {
-    response.render('/index.html');
+    response.sendFile('/index.html');
 });
 
 app.post('/mail', function(req, res) {
