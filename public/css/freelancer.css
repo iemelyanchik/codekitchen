@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Marker Felt";
-  src: url("../MarkerFelt.ttf") format("ttf");
+  src: url("../MarkerFelt/MarkerFelt.ttf") format("ttf");
 }
 
 body {
